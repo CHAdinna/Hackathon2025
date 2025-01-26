@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+<h3>home page</h3>
+<p><br>Your Avatar Name: {{ request.session.avatar_name }}<br></p>
+
+
+<a href="{% url 'base:logout' %}">logout</a>
+
+
+<div class="shadow-wrap">
+    <div class="form-wrap">
+        <h3>Welcome to the Pomodoro Timer!</h3>
+        <button id="clock-icon" class="clock-icon">
+            🕒
+        </button>
+    </div>
+</div>
+
+<!-- Popup Modal for Pomodoro Timer -->
+<div id="pomodoro-popup" class="popup">
+    <div class="popup-content">
+        <h2>Pomodoro Timer</h2>
+        <p id="pomodoro-time">25:00</p>
+        <button id="start-pomodoro">Start</button>
+        <button id="close-popup">Close</button>
+    </div>
+</div>
+
+<script src="../static/scripts.js"></script>
+{% endblock content %}
