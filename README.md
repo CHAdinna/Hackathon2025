@@ -14,7 +14,7 @@ if the user is under the Irvine Hacks wifi to connect to the HTTP:// site.}}$
 
 ## How we made it:
 
-Technologies: HTML, CSS, Javascript, python, python Django, python Sqlalchemy
+Technologies: HTML, CSS, Javascript, Python, Python Django, Python Sqlalchemy
 
 Throughout the teamwork process, we designated tasks to each other and split half and half
 among front-end programmers and back-end programmers. Our front-end team started by
