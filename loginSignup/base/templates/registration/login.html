@@ -1,8 +1,12 @@
 {% extends "base.html" %}
 {% block content %}
-<div class="shadow-wrap">
+
+{% load static %}
+ <link rel="stylesheet" href="{% static 'css/login.css' %}">
+ <link rel="stylesheet" href="{% static 'css/global.css' %}">
+
+  <div class="shadow-wrap">
  <div class="form-wrap">
-  <h3>Login </h3>
 <form method="POST">
  {% csrf_token %}
  {{form}}
@@ -12,4 +16,7 @@
 
 </div>
 </div>
+<script src="{% static 'login.js' %}"></script>
 {% endblock content %}
+
+

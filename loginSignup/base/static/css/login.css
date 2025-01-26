@@ -13,30 +13,30 @@ body {
     height: 100vh;
     color: #4b3621; /* Dark brown text color */
   }
-  
+
   /* Login Page Container */
   #login-page {
     width: 300px;
     text-align: center;
   }
-  
+
   /* Header Styles */
   header h1 {
     font-size: 2rem;
     margin-bottom: 20px;
   }
-  
+
   /* Form Styles */
   form {
     display: flex;
     flex-direction: column;
     gap: 15px;
   }
-  
+
   label {
     font-size: 1rem;
   }
-  
+
   input[type="text"],
   input[type="password"] {
     width: 100%;
@@ -45,15 +45,15 @@ body {
     border-radius: 8px;
     font-size: 1rem;
   }
-  
+
   input[type="text"]:focus,
   input[type="password"]:focus {
     border-color: #a0522d; /* Darker focus border */
     outline: none;
   }
-  
+
   /* Text Button Styles */
-  button , .signup-link{
+  button, .signup-link {
     all: unset; /* Remove all button styles */
     font-size: 1.2rem;
     color: #4b3621;
@@ -61,21 +61,20 @@ body {
     text-decoration: underline;
     transition: color 0.3s ease, text-shadow 0.3s ease;
   }
-  
+
   button:hover {
     color: #a0522d; /* Change color on hover */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
   }
-  
+
   button:active {
     color: #5c3317; /* Darker brown when clicked */
     text-shadow: none;
   }
-  
+
   /* Footer Styles */
   footer p {
     font-size: 0.8rem;
     color: #8b4513;
     margin-top: 20px;
   }
-  

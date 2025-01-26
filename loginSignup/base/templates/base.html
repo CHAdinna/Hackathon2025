@@ -1,17 +1,30 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>LOGIN PAGE</title>
-
- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zot Buddy - Login</title>
+  <link rel="preload" href="assets/fonts/PixelifySans-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+  {% load static %}
+ <link rel="stylesheet" href="{% static 'css/global.css' %}">
 
 
 </head>
 <body>
-  {% block content %}{% endblock content %}
+  <div id="login-page">
+    <header>
+      <h1>Log In</h1>
+    </header>
+
+      {% block content %}{% endblock content %}
+
+
+    <footer>
+      <p>Made with ❤️ by Team Zot Buddy</p>
+    </footer>
+  </div>
+ {% load static %}
+<script src="{% static 'login.js' %}"></script>
 </body>
 </html>

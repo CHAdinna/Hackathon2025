@@ -1,0 +1,44 @@
+{
+  "name": "Zot Buddy",
+  "description": "Chrome extension with a task manager and virtual pet to enhance productivity.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["storage", "alarms", "activeTab", "notifications", "scripting"],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_popup": "landing.html",
+    "default_icon": {
+      "16": "assets/icon16.png",
+      "48": "assets/icon48.png",
+      "128": "assets/icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["styles/avatar.css"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["assets/*.png", "assets/*.gif", "styles/*.css", "assets/fonts/*.ttf"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+T"
+      },
+      "description": "Open the task manager"
+    }
+  },
+  "icons": {
+    "16": "assets/icon16.png",
+    "48": "assets/icon48.png",
+    "128": "assets/icon128.png"
+  }
+}

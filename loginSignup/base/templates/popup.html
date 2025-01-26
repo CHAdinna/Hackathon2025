@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pomodoro Study Buddy</title>
+  <link rel="preload" href="../static/assets/fonts/PixelifySans-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+{% load static %}
+ <link rel="stylesheet" href="{% static 'css/popup.css' %}">
+   <link rel="stylesheet" href="{% static 'css/global.css' %}">
+
+</head>
+<body>
+  <div id="app">
+    <!-- Header Section -->
+    <header>
+      <h1>Pomodoro Study Buddy</h1>
+      <p>Stay productive with focused work sessions and breaks!</p>
+    </header>
+
+    <!-- Timer Section -->
+    <main>
+      <div id="pomodoro-timer">
+        <p>Time Left: <span id="timer-display">25:00</span></p>
+        <div id="pomodoro-controls">
+          <button id="start-timer">Start</button>
+          <button id="stop-timer">Stop</button>
+          <button id="reset-timer">Reset</button>
+        </div>
+      </div>
+      <a href="{% url 'base:logout' %}">logout</a>
+    </main>
+
+
+    <!-- Footer Section -->
+    <footer>
+      <p>Made with ❤️ by Team Zot Buddy</p>
+    </footer>
+  </div>
+
+  <script src="{% static '/pomodoro.js' %}"></script>
+</body>
+</html>

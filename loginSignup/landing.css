@@ -1,0 +1,58 @@
+/* General styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "PixelifySans", Arial, sans-serif;
+    background-image: url("assets/closed-book.png"); /* !!!!!!!!Replace with the actual path to your PNG !!!!!!!!!*/
+    background-size: cover; /* Ensure the image covers the entire viewport */
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #4b3621; /* Dark brown text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  /* Landing Page Container */
+  #landing-page {
+    text-align: center;
+  }
+
+  /* Header Styles */
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+
+  header p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+
+  /* Text Button Styles */
+  button {
+    all: unset; /* Remove all default button styles */
+    color: #4b3621;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: underline;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+  }
+
+  button:hover {
+    color: #a0522d; /* Change color on hover */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+  }
+
+  button:active {
+    color: #8b4513; /* Darker shade on click */
+  }
+
+  /* Footer Styles */
+  footer p {
+    font-size: 0.8rem;
+    color: #8b4513; /* Subtle brown for footer */
+    margin-top: 20px;
+  }

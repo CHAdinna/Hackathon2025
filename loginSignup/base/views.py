@@ -3,6 +3,11 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import redirect
 from django.contrib.auth import logout, login
+from django.shortcuts import render
+
+def pomodoro_timer(request):
+    return render(request, "popup.html")
+
 
 @login_required
 def home(request):
@@ -23,17 +28,19 @@ def authView(request):
  if request.method == "POST":
   form = UserCreationForm(request.POST or None)
 
-  avatar_name = request.POST.get('avatar_name')
+
   if form.is_valid():
    user = form.save()
    email = request.POST.get('email')
+   first_name = request.POST.get('first_name')
 
    # Save the email manually in the User model
    user.email = email  # Ensure the email is saved in the User model
    user.save()
 
-   if avatar_name:
-    request.session['avatar_name'] = avatar_name  # Store avatar_name in session
+   user.first_name = first_name
+   user.save()
+
    form.save()
 
    login(request, user)

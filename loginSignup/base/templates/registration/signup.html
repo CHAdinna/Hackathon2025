@@ -1,23 +1,26 @@
 {% extends "base.html" %}
+
 {% block content %}
-<div class="shadow-wrap">
- <div class="form-wrap">
-  <h3>Signup </h3>
-<form method="POST">
- {% csrf_token %}
- {{form}}
+{% load static %}
+ <link rel="stylesheet" href="{% static 'css/style.css' %}">
+ <link rel="stylesheet" href="{% static 'css/global.css' %}">
 
- <label for="email">Name Your Email:</label>
- <input type="text" id="email" name="email" placeholder="Enter your email">
+<h3>Signup</h3>
 
+    <form method="POST" id="signup-form">
+        {% csrf_token %}
 
-  <label for="avatar_name">Name Your Avatar:</label>
- <input type="text" id="avatar_name" name="avatar_name" placeholder="Enter your avatar name">
+        {{ form.as_p }}
 
+      <label for="email">Name Your Email:</label>
+      <input type="text" id="email" name="email" placeholder="Enter your email" required>
 
- <button type="submit">Submit</button>
-</form>
-<a class="signup-link" href="{% url 'base:login' %}">Login</a>
-</div>
-</div>
-{% endblock content %}a
+      <label for="first_name">Name Your Avatar:</label>
+      <input type="text" id="first_name" name="first_name" placeholder="Enter your avatar name" required>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <a class="signup-link" href="{% url 'base:login' %}">Already have an account? Login</a>
+<script src="{% static 'login.js' %}"></script>
+{% endblock content %}

@@ -1,30 +1,62 @@
-{% extends "base.html" %}
-{% block content %}
-<h3>home page</h3>
-<p><br>Your Avatar Name: {{ request.session.avatar_name }}<br></p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zot Buddy - Task List</title>
+  <link rel="preload" href="assets/fonts/PixelifySans-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+  {% load static %}
+ <link rel="stylesheet" href="{% static 'css/global.css' %}">
+ <link rel="stylesheet" href="{% static 'css/popup.css' %}">
+</head>
+<body>
+  <div id="app">
+    <!-- Header Section -->
+    <header>
+      <h1>Zot Buddy</h1>
+    </header>
+    <a href="{% url 'base:pomodoro_timer' %}" class="clock-icon"> 🕒 </a>
 
-
-<a href="{% url 'base:logout' %}">logout</a>
-
-
-<div class="shadow-wrap">
-    <div class="form-wrap">
-        <h3>Welcome to the Pomodoro Timer!</h3>
-        <button id="clock-icon" class="clock-icon">
-            🕒
-        </button>
+    <!-- Tabs Section -->
+    <div id="tabs">
+      <button class="tab active" data-page="task-manager">Task Manager</button>
+      <button class="tab" data-page="pomodoro">Pomodoro Study Buddy</button>
     </div>
-</div>
 
-<!-- Popup Modal for Pomodoro Timer -->
-<div id="pomodoro-popup" class="popup">
-    <div class="popup-content">
-        <h2>Pomodoro Timer</h2>
-        <p id="pomodoro-time">25:00</p>
-        <button id="start-pomodoro">Start</button>
-        <button id="close-popup">Close</button>
+    <!-- Pages Section -->
+    <div id="pages">
+      <!-- Task Manager Page -->
+      <div id="task-manager" class="page active">
+          <p><br>Your Avatar Name: {{ request.user.first_name }}<br></p>
+        <h2>Task List</h2>
+        <div id="task-input">
+          <input type="text" id="new-task" placeholder="Enter a new task...">
+          <button id="add-task">Add Task</button>
+        </div>
+        <ul id="task-list"></ul>
+      </div>
+
+      <!-- Pomodoro Study Buddy Page -->
+      <div id="pomodoro" class="page">
+        <div id="pomodoro-timer">
+          <p>Time Left: <span id="timer-display">25:00</span></p>
+          <button id="start-timer">Start</button>
+          <button id="pause-timer">Pause</button> <!-- Updated button name -->
+          <button id="reset-timer">Reset</button>
+        </div>
+      </div>
     </div>
-</div>
 
-<script src="../static/scripts.js"></script>
-{% endblock content %}
+      <a href="{% url 'base:logout' %}">logout</a>
+
+
+    <!-- Footer Section -->
+    <footer>
+      <p>Made with ❤️ by Team Zot Buddy</p>
+    </footer>
+  </div>
+
+  <script src="{% static '/pomodoro.js' %}"></script>
+</body>
+</html>
+

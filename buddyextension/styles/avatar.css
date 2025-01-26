@@ -1,0 +1,34 @@
+/* Container for Anteater Avatar */
+#anteater-container {
+    position: fixed; /* Fixed to stay at the bottom of the browser */
+    bottom: 10px; /* Slight margin from the bottom edge */
+    left: 0; /* Start at the left edge */
+    z-index: 9999; /* Ensure it appears above other content */
+  }
+
+  /* Anteater Sprite */
+  #anteater-sprite {
+    width: 1920px; /* Adjust based on the sprite dimensions */
+    height: 1080px; /* square ratio :) */
+    transition: transform 0.3s ease, left 2s linear; /* Smooth movement and scaling */
+  }
+
+  /* Walking Animation (Movement across the screen) */
+  @keyframes move-across {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: calc(100vw - 100px); /* Move to the right edge */
+    }
+  }
+
+  /* Moving State */
+  #anteater-sprite.moving {
+    animation: move-across 20s linear infinite; /* 10-second loop across the screen */
+  }
+
+  /* Hover Interaction */
+  #anteater-sprite:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+  }
