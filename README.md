@@ -2,6 +2,13 @@
 
 Group members: Donnie Militante, Sydney Basulto, Mia Aburto, Chidubem Adinna
 
+## Roles
+* #### Mia Aburto - Back-end
+* #### Sydney Basulto - Front-end
+* #### Chidubem Adinna - Back-end 
+* #### Donnie Militante - Front-end 
+
+
 Our program is the best way for any student, mostly UCI students, to keep track 
 of the way they're spending their time and studying by incorporating studying 
 methods such as the Pomodoro method. Alongside promoting better study habits we
