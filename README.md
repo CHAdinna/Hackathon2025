@@ -17,7 +17,8 @@ them forget the arrangements they have made prior.
 
 ### How to clone the repo:
 $\color{red}{\text{The repo doesn't need to be cloned, the website can be accessed 
-if the user is under the Irvine Hacks wifi to connect to the HTTP:// site.}}$
+if the user is under the
+Irvine Hacks wifi to connect to the HTTP:// site.}}$
 
 ## How we made it:
 
