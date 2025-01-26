@@ -15,10 +15,11 @@ methods such as the Pomodoro method. Alongside promoting better study habits we
 also provide students with a way to keep their schedule neat and never let
 them forget the arrangements they have made prior.
 
-### How to clone the repo:
-$\color{red}{\text{The repo doesn't need to be cloned, the website can be accessed 
-if the user is under the
-Irvine Hacks wifi to connect to the HTTP:// site.}}$
+## How to run the file:
+* write the Irvinehacks wifi ip address
+* add a colon followed by 8000
+* for example: "168.3.1.0:8000"
+* it is meant to be an extension however due to some constraints we are unable to share the extension
 
 ## How we made it:
 
