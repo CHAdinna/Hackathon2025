@@ -9,7 +9,7 @@ also provide students with a way to keep their schedule neat and never let
 them forget the arrangements they have made prior.
 
 ### How to clone the repo:
-$\color{pink}{\text{The repo doesn't need to be cloned, the website can be accessed 
+$\color{red}{\text{The repo doesn't need to be cloned, the website can be accessed 
 if the user is under the Irvine Hacks wifi to connect to the HTTP:// site.}}$
 
 ## How we made it:
