@@ -9,6 +9,8 @@ also provide students with a way to keep their schedule neat and never let
 them forget the arrangements they have made prior.
 
 ### How to clone the repo:
+$\color{pink}{\text{The repo doesn't need to be cloned, the website can be accessed 
+if the user is under the Irvine Hacks wifi to connect to the HTTP:// site.}}$
 
 ## How we made it:
 
@@ -31,3 +33,13 @@ actually, connecting every asset to map to the website.
 
 ## Our key takeaways:
 
+For the majority of the team, this was our first hackathon and 2 big takeaways. The first one is the stress of
+working under pressure under such a strict time crunch where every second counts and every person in the room 
+is on edge attempting to flesh out their best ideas. Although troubling in the beginning, only under such strict
+conditions can the most creative and hardworking team be seen. Our second biggest takeaway is about brainstorming
+brainstorming determines your path for the rest of the competition and if a single second is wasted on the wrong idea
+that's just how much further back you are set from the rest of the competition. We, unfortunately, went through this 
+unfortunate situation of deciding on one topic only to realize how impossible the task would be to complete in our 
+allotted time. However, this allowed for a brighter and more creative idea to grow from the remains of the previous
+one. Moving forward, with the experience we gained from this hackathon, it will allow us to be even more decisive and
+focused under pressure.
